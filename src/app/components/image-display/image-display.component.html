@@ -1,0 +1,10 @@
+<div *ngIf="media_type === 'image'; then image else other"></div>
+<ng-template #image>
+  <img class="image-container" [src]="dataSource"/>
+</ng-template>
+<ng-template #other>
+  <iframe class="frame-container" [src]="dataSource" *ngIf="dataSource"></iframe>
+</ng-template>
+
+
+

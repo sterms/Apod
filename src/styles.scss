@@ -1,0 +1,15 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+// $apod-cerulean-blue: #349AFF;
+$apod-cerulean-blue: #2A52AB;
+$apod-border-radius: 10px;
+// $apod-cerulean-blue: #007BA7;
+// $apod-cerulean-blue: #04A4D3;
+
+.root-container {
+  background: $apod-cerulean-blue;
+  color: whitesmoke;
+  font-family: Oswald;
+  margin: 0;
+}

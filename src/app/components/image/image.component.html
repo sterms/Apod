@@ -1,0 +1,24 @@
+<div class="component-container">
+  <div class="elements-container">
+    <div class="picker-container">
+      <mat-form-field class="picker">
+        <input matInput [min]="earliestDate" [max]="currentDate" [matDatepicker]="datePick" placeholder="Select a date" [formControl]="dateControl">
+        <mat-datepicker-toggle matSuffix [for]="datePick"></mat-datepicker-toggle>
+        <mat-datepicker #datePick></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="display-and-info-container">
+      <apod-image-display class="image-display-container"></apod-image-display>
+      <div class="image-info-container">
+        <apod-image-info></apod-image-info>
+        <button mat-button class="hd-button" *ngIf="hasHd" (click)="setHd()">
+            View in {{isDisplayingHd() ? 'SD' : 'HD'}}
+        </button>
+      </div>
+    </div>
+    <!-- There seems to be some kind of CORS issue, so don't show if they aren't resolved -->
+    <div *ngIf="remainingCalls > 0 && currentLimit > 0">
+      <label class="remaining-calls-label">{{remainingCalls}} of {{currentLimit}} calls remaining.</label>
+    </div>
+  </div>
+</div>

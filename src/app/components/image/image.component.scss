@@ -1,0 +1,49 @@
+@import "../../../styles.scss";
+
+.component-container {
+  background: whitesmoke;
+  // color: steelblue;
+  color: $apod-cerulean-blue;
+}
+
+.elements-container {
+  display: block;
+}
+
+.display-and-info-container {
+  display: flex;
+}
+
+.picker-container {
+  width: 100%;
+}
+
+.picker {
+  width: 25%;
+  margin: 20px 20px 10px 20px;
+}
+
+.image-display-container {
+  max-width: 50%;
+  float: left;
+  margin: 0px 20px 20px 20px
+}
+
+.image-info-container {
+  max-width: 50%;
+  height: auto;
+  float: right;
+  display: block;
+  margin: 0px 20px 20px 20px;
+}
+
+.hd-button {
+  max-width: 25%;
+  height: 50px;
+  border-radius: $apod-border-radius;
+  margin-top: 10px;
+}
+
+.remaining-calls-label {
+  margin: 20px;
+}

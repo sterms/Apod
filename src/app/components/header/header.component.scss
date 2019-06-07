@@ -1,0 +1,34 @@
+
+.header-container {
+  font-family: 'Fjalla One';
+  width: 100%;
+  display: inline-flex;
+}
+
+.title-container {
+  display: grid;
+  margin: 20px;
+}
+
+.large-title-container {
+  font-size: 40px;
+  font-style: italic;
+  grid-row: 1;
+}
+
+.small-title-container {
+  font-size: 20px;
+  grid-row: 2;
+}
+
+.logo-container {
+  margin-left: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}

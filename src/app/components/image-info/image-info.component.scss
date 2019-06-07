@@ -1,0 +1,13 @@
+@import "../../../styles.scss";
+
+.info-container {
+  background: $apod-cerulean-blue;
+  color: whitesmoke;
+  border-radius: $apod-border-radius;
+  display: grid;
+  height: auto;
+}
+
+.info-text-container {
+  margin: 10px;
+}

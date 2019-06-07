@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+
+.image-container {
+  border-radius: $apod-border-radius;
+  max-width: 100%;
+}
+
+.frame-container {
+  max-width: 100%;
+}
